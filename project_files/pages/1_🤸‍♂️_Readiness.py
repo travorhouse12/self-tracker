@@ -4,7 +4,7 @@ from PIL import Image
 from sidebar import add_sidebar
 
 # Read in the CSV file
-df = pd.read_csv('/Users/macbook/Desktop/Data Science Personal/streamlit/total_sleep.csv')
+df = pd.read_csv('../total_sleep.csv')
 
 # Set page layout
 st.set_page_config(
