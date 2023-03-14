@@ -13,13 +13,9 @@ st.set_page_config(
 
 add_sidebar()
 
+# Add the profile image
+image_url = "https://datadayz.com/wp-content/uploads/2023/03/Group-310-1.png"
+st.image(image_url, width=75)
+
 # Set the title of the app
-st.title("Activity Hub")
-
-# Set empty space
-space = st.empty()
-space.header("")
-
-# Create a bar chart to display the activity data
-df['date'] = df['date'].astype('category')
-st.bar_chart(df, x='date', y='Total Sleep Duration')
+st.title("Travor's health tracker! 👋")
