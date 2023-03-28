@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 from PIL import Image
+import numpy as np
 from sidebar import add_sidebar
 
 # Read in the CSV file
@@ -40,3 +41,5 @@ with col2:
 
 with col3:
     summary(title = "Average Activity →", metric = number, background_color = '#927221')
+
+st.altair_chart(df)
